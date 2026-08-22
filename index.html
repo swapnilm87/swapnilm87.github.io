@@ -1,12 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swapnil Mali website.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapnil's DevOps & Cloud Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    .ubuntu-light {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .ubuntu-regular {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .ubuntu-medium {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .ubuntu-bold {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .ubuntu-light-italic {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    .ubuntu-regular-italic {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .ubuntu-medium-italic {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    .ubuntu-bold-italic {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      color: #23272c;
+    }
+
+    header {
+      background: #1a365d;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+
+    .project {
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s;
+    }
+
+    .project:hover {
+      box-shadow: 0 8px 32px rgba(30, 60, 120, 0.15);
+    }
+
+    .project img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a365d;
+    }
+
+    .project-meta {
+      color: #7a8593;
+      font-size: .96rem;
+      margin-bottom: 16px;
+    }
+
+    .project-desc {
+      flex: 1;
+      color: #303a49;
+      margin-bottom: 12px;
+    }
+
+    .btn-read {
+      background: #FFCB56;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: 700;
+      align-self: flex-start;
+      transition: background .2s;
+      letter-spacing: .5px;
+    }
+
+    .btn-read:hover {
+      background: #38B6F8;
+    }
+
+    @media (max-width: 750px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my website.</p>
+  <header>
+    <h1>Swapnil's DevOps & Cloud Insights</h1>
+    <p>Latest projects & blogs for cloud professionals</p>
+  </header>
+  <main>
+    <article class="project">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+        alt="Cloud computing blog">
+      <div class="project-content">
+        <div class="project-title">Project #1: Jenkins CI/CD + AWS EKS - Project With Workflow Execution</div>
+        <div class="project-meta">By Swapnil Mali</div>
+        <div class="project-desc">
+          This project demonstrates a DevOps pipeline integrating Jenkins, Docker, and AWS EKS (Kubernetes) to achieve Continuous Integration and Continuous Deployment (CI/CD) for a Java web application. The application is containerized using Tomcat, monitored with Prometheus and Grafana, and automatically deployed to EKS.
+        </div>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/java-blog-site-cicd-eks-project">Project Link</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+        alt="DevOps automation">
+      <div class="project-content">
+        <div class="project-title">Project #2: Full Stack Chat Application</div>
+        <div class="project-meta">By Swapnil Mali</div>
+        <div class="project-desc">
+          Kubernetes manifests for deploying a full-stack chat application on a local Docker Desktop (Windows) environment with Kubernetes enabled on a single-node cluster.
+        </div>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/full-stack-chatapp">Project Link</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+        alt="Monitoring tools">
+      <div class="project-content">
+        <div class="project-title">Project #3: DevSecOps NGINX Webapp on Docker Desktop</div>
+        <div class="project-meta">By Swapnil Mali</div>
+        <div class="project-desc">
+          This web app demonstrates CI/CD pipeline creation and Docker image security scanning. It uses distroless images to minimize security risks. The system generates vulnerability reports and creates a final SBOM for the secure image.
+        </div>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/devsecops-nginx-webapp">Project Link</a>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
