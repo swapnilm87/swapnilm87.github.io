@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,12 +89,12 @@
     }
 
     .gist-embed {
-       max-width: 1080px;
-       margin: 40px auto;
-       padding: 0 20px;
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-       gap: 32px;
+      max-width: 1080px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+      gap: 32px;
     }
 
     .project {
@@ -153,6 +154,14 @@
       align-self: flex-start;
       transition: background .2s;
       letter-spacing: .5px;
+
+    }
+
+    .btn-read .btn-icon {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      filter: invert(1);
     }
 
     .btn-read:hover {
@@ -166,6 +175,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Swapnil's DevOps & Cloud Insights</h1>
@@ -174,38 +184,69 @@
   <main>
     <article class="project">
       <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
-        alt="Cloud computing blog">
+        alt="Software development and CI/CD workstation">
       <div class="project-content">
         <div class="project-title">Project #1: Jenkins CI/CD + AWS EKS - Project With Workflow Execution</div>
         <div class="project-meta">By Swapnil Mali</div>
         <div class="project-desc">
-          This project demonstrates a DevOps pipeline integrating Jenkins, Docker, and AWS EKS (Kubernetes) to achieve Continuous Integration and Continuous Deployment (CI/CD) for a Java web application. The application is containerized using Tomcat, monitored with Prometheus and Grafana, and automatically deployed to EKS.
+          This project demonstrates a DevOps pipeline integrating Jenkins, Docker, and AWS EKS (Kubernetes) to achieve
+          Continuous Integration and Continuous Deployment (CI/CD) for a Java web application. The application is
+          containerized using Tomcat, monitored with Prometheus and Grafana, and automatically deployed to EKS.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/java-blog-site-cicd-eks-project">Project Link</a>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/java-blog-site-cicd-eks-project">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon"
+            class="btn-icon" />
+          Project
+          Link</a>
       </div>
     </article>
     <article class="project">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-        alt="DevOps automation">
+      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
+        alt="kubernetes deployments">
       <div class="project-content">
         <div class="project-title">Project #2: Full Stack Chat Application</div>
         <div class="project-meta">By Swapnil Mali</div>
         <div class="project-desc">
-          Kubernetes manifests for deploying a full-stack chat application on a local Docker Desktop (Windows) environment with Kubernetes enabled on a single-node cluster.
+          Kubernetes manifests for deploying a full-stack chat application on a local Docker Desktop (Windows)
+          environment with Kubernetes enabled on a single-node cluster.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/full-stack-chatapp">Project Link</a>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/full-stack-chatapp"> <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+          Project
+          Link</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+        alt="Docker containerization with docker compose">
+      <div class="project-content">
+        <div class="project-title">Project #3: StayNest - Airbnb-like Full-Stack Rental Platform</div>
+        <div class="project-meta">By Swapnil Mali</div>
+        <div class="project-desc">
+          A production-grade vacation rental web app demonstrating containerized full-stack deployment with Docker,
+          MongoDB, Express, and Nginx.
+        </div>
+        <a class="btn-read" target="_blank" href="https://github.com/devops-swapnil/staynest"> <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+          Project
+          Link</a>
       </div>
     </article>
     <article class="project">
       <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
-        alt="Monitoring tools">
+        alt="securtity reports">
       <div class="project-content">
-        <div class="project-title">Project #3: DevSecOps NGINX Webapp on Docker Desktop</div>
+        <div class="project-title">Project #4: DevSecOps NGINX Webapp on Docker Desktop</div>
         <div class="project-meta">By Swapnil Mali</div>
         <div class="project-desc">
-          This web app demonstrates CI/CD pipeline creation and Docker image security scanning. It uses distroless images to minimize security risks. The system generates vulnerability reports and creates a final SBOM for the secure image.
+          This web app demonstrates CI/CD pipeline creation and Docker image security scanning. It uses distroless
+          images to minimize security risks. The system generates vulnerability reports and creates a final SBOM for the
+          secure image.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/devsecops-nginx-webapp">Project Link</a>
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/devsecops-nginx-webapp"> <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+          Project
+          Link</a>
       </div>
     </article>
   </main>
@@ -213,4 +254,5 @@
     <script src="https://gist.github.com/swapnilm87/70f02f111fb6ac6ba37a3791c0dff6b6.js"></script>
   </div>
 </body>
+
 </html>
