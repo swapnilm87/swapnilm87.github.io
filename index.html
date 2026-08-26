@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
+  <script src="https://jsdelivr.net" defer></script>
   <style>
     .ubuntu-light {
       font-family: "Ubuntu", sans-serif;
@@ -252,14 +253,16 @@
   </main>
   <div class="gist-embed">
     <script src="https://gist.github.com/swapnilm87/70f02f111fb6ac6ba37a3791c0dff6b6.js"></script>
-    <script src="https://jsdelivr.net"></script>
-    <script>
-      mermaid.initialize({ 
-          startOnLoad: true,
-          securityLevel: 'loose'
-      });
-    </script>
   </div>
+  <script>
+      window.addEventListener('load', function() {
+        if (typeof mermaid !== 'undefined') {
+            mermaid.initialize({ startOnLoad: true });
+        } else {
+            console.error("Mermaid failed to load from CDN.");
+        }
+    });
+   </script>
 </body>
 
 </html>
