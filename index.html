@@ -252,18 +252,19 @@
       </div>
     </article>
   </main>
+  <!-- Load Mermaid library -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <!-- Initialize Mermaid -->
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default'
+    });
+  </script>
   <div class="gist-embed">
     <script src="https://gist.github.com/swapnilm87/70f02f111fb6ac6ba37a3791c0dff6b6.js"></script>
   </div>
-  <script>
-      window.addEventListener('load', function() {
-        if (typeof mermaid !== 'undefined') {
-            mermaid.initialize({ startOnLoad: true });
-        } else {
-            console.error("Mermaid failed to load from CDN.");
-        }
-    });
-   </script>
+  
 </body>
 
 </html>
