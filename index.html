@@ -80,6 +80,107 @@
       letter-spacing: 1px;
     }
 
+    .about-card {
+      max-width: 1080px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      border: 1px solid #eaeaea;
+      box-sizing: border-box;
+    }
+
+    .about-badge {
+      display: inline-block;
+      background-color: #e6f4ea;
+      color: #137333;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-card h2 {
+      font-size: 1.8rem;
+      margin: 0 0 0.3rem 0;
+      color: #222;
+    }
+
+    .about-card .author {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .about-desc,
+    .about-details p {
+      color: #444;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 1.2rem 0 1.5rem 0;
+    }
+
+    .skill-tag {
+      background: #f1f3f5;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid #e1e4e8;
+    }
+
+    .about-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background-color: #FFCB56;
+      color: #fff;
+      border: 1px solid #FFCB56;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .action-btn:hover {
+      background-color: #3ced77;
+    }
+
+    .action-btn img,
+    .action-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .email-btn {
+      background-color: #1a365d;
+      color: #ffffff;
+      border-color: #1a365d;
+    }
+
+    .email-btn:hover {
+      background-color: #38B6F8;
+    }
+
     main {
       max-width: 1080px;
       margin: 40px auto;
@@ -143,17 +244,18 @@
       border-radius: 4px;
       text-align: center;
       font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       align-self: flex-start;
       transition: background .2s;
       letter-spacing: .5px;
-
     }
 
-    .btn-read .btn-icon {
+    .btn-read img {
       width: 18px;
       height: 18px;
       display: inline-block;
-      filter: invert(1);
     }
 
     .btn-read:hover {
@@ -173,6 +275,54 @@
     <h1>Swapnil's DevOps & Cloud Insights</h1>
     <p>Latest projects & blogs for cloud professionals</p>
   </header>
+  <section class="about-card">
+    <div class="about-content">
+      <div class="about-badge">Available for DevOps Roles</div>
+      <h2>About Me</h2>
+      <div class="author">Swapnil Mali • DevOps &amp; Cloud Engineer</div>
+      <p class="about-desc">
+        DevOps Engineer with <strong>3+ years of experience</strong> specializing in building robust CI/CD pipelines,
+        container orchestration on <strong>AWS EKS</strong>, and implementing secure <strong>DevSecOps</strong>
+        workflows.
+      </p>
+      <div class="about-details">
+        <p>
+          <strong>How I Work:</strong> I focus on automating software delivery lifecycle steps, improving deployment
+          reliability, containerizing microservices with Docker, and establishing end-to-end observability using
+          Prometheus and Grafana.
+        </p>
+      </div>
+      <div class="skills-wrap">
+        <strong>Hands On Tools/Skills:</strong>
+        <span class="skill-tag">AWS (EKS, EC2, S3, VPC, IAM, RDS, Route53, CloudWatch)</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Helm</span>
+        <span class="skill-tag">Terraform</span>
+        <span class="skill-tag">Jenkins CI/CD</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">ArgoCD</span>
+        <span class="skill-tag">DevSecOps &amp; SonarQube &amp; Trivy</span>
+        <span class="skill-tag">Prometheus &amp; Grafana</span>
+        <span class="skill-tag">Linux &amp; Bash</span>
+        <span class="skill-tag">Python3</span>
+      </div>
+      <div class="about-actions">
+        <a href="https://github.com/swapnilm87" target="_blank" class="action-btn">
+          <img alt="GitHub icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
+          GitHub Profile
+        </a>
+        <a href="mailto:swapnilmali848@gmail.com" class="action-btn email-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+          </svg>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
   <main>
     <article class="project">
       <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
@@ -185,9 +335,8 @@
           Continuous Integration and Continuous Deployment (CI/CD) for a Java web application. The application is
           containerized using Tomcat, monitored with Prometheus and Grafana, and automatically deployed to EKS.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/java-blog-site-cicd-eks-project">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon"
-            class="btn-icon" />
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/java-blog-site-cicd-eks-project"><img
+            alt="GitHub icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
           Project
           Link</a>
       </div>
@@ -202,8 +351,8 @@
           Kubernetes manifests for deploying a full-stack chat application on a local Docker Desktop (Windows)
           environment with Kubernetes enabled on a single-node cluster.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/full-stack-chatapp"> <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/full-stack-chatapp"><img
+            alt="GitHub icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
           Project
           Link</a>
       </div>
@@ -218,8 +367,8 @@
           A production-grade vacation rental web app demonstrating containerized full-stack deployment with Docker,
           MongoDB, Express, and Nginx.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/devops-swapnil/staynest"> <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+        <a class="btn-read" target="_blank" href="https://github.com/devops-swapnil/staynest"><img alt="GitHub icon"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
           Project
           Link</a>
       </div>
@@ -235,14 +384,14 @@
           images to minimize security risks. The system generates vulnerability reports and creates a final SBOM for the
           secure image.
         </div>
-        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/devsecops-nginx-webapp"> <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub icon" class="btn-icon" />
+        <a class="btn-read" target="_blank" href="https://github.com/swapnilm87/devsecops-nginx-webapp"><img
+            alt="GitHub icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
           Project
           Link</a>
       </div>
     </article>
   </main>
-  
+
 </body>
 
 </html>
